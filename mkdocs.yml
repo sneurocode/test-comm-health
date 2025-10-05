@@ -1,0 +1,56 @@
+site_name: test-comm-health
+site_url: https://sneurocode.github.io/test-comm-health
+site_description: My Community Health Lecture Notes (Test)
+site_author: Saviour Elikplim Animdife
+
+# Use the Material theme
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features: 
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+ 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# Repository info (important for GitHub Pages)
+repo_name: sneurocode/test-comm-health
+repo_url: https://github.com/sneurocode/test-comm-health
+
+# Navigation
+nav:
+  - Home: index.md
+  - About: about.md
+  - Features:
+    - Overview: features/index.md
+    - Details: features/details.md
+
+plugins:
+  - search
+  - redirects
