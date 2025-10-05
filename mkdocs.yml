@@ -3,6 +3,10 @@ site_url: https://sneurocode.github.io/test-comm-health
 site_description: My Community Health Lecture Notes (Test)
 site_author: Saviour Elikplim Animdife
 
+# Repository info (important for GitHub Pages)
+repo_name: sneurocode/test-comm-health
+repo_url: https://github.com/sneurocode/test-comm-health
+
 # Use the Material theme
 theme:
   name: material
@@ -27,6 +31,7 @@ theme:
     - toc.integrate
     - search.suggest
     - search.highlight
+    - content.code.copy
  
 markdown_extensions:
   - admonition
@@ -38,15 +43,18 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
 
-# Repository info (important for GitHub Pages)
-repo_name: sneurocode/test-comm-health
-repo_url: https://github.com/sneurocode/test-comm-health
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Navigation
 nav:
   - Home: index.md
   - About: about.md
+  - Math Examples: math-examples.md
   - Features:
     - Overview: features/index.md
     - Details: features/details.md
